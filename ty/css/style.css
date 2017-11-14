@@ -1,0 +1,1299 @@
+/*********************
+*1/GENERAL
+*-1a/ABOUT
+*-1b/EDUCATION
+*-1c/EXPERIENCE
+*-1d/SKILLS
+*-1e/PROJECTS
+*-1f/SOCIAL
+*2/-DESKTOPS
+*3/-LAPTOPS
+*4/-TABLETS
+*5/-MOBILE
+***************************/
+
+/**********/
+/*GENERAL*/
+/**********/
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin:0;
+	font-size:16px;
+}
+.bottom-nav-w{
+	background:white;
+}
+.bottom-nav-b{
+	background:#4DA8CA;
+}
+#my_title{
+	text-align:center;
+}
+/*Blue and White Sections*/
+.title {
+	float: left;
+	width: 20%;
+	margin-bottom: 2%;
+}
+.spaced-title{
+	float: left;
+	width: 100%;
+	margin-bottom: 2%;
+}
+/*Main Section*/
+.main-section {
+	background: rgba(34,125,170,1);
+	background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
+	background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	display: table;
+	width: 100%;
+	height: 700px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+.main-section h1 {
+	font-size: 60px;
+}
+.main-section > .section-content {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 100px;
+	text-align: left;
+}
+.main-section h1:after {
+	content: ' ';
+	display: block;
+	width: 50px;
+	margin: 10px 0 -10px 48%;
+	border: 2px solid #fff;
+}
+.main-section p {
+	font-size: 20px;
+	color: #deeef5;
+	letter-spacing: 1px;
+	text-align:center;
+}
+.section-content {
+	padding: 100px 100px;
+	display: block;
+	overflow: auto;
+}
+
+/*Blue and White Sections*/
+.section {
+	display: block;
+}
+.blue-bg .title h1 {
+	color: white;
+}
+.white-bg .title h1 {
+	color: #3295be;
+}
+.title > h1 {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 26px;
+	letter-spacing: 2px;
+}
+.title h1:after {
+	content: ' ';
+	display: block;
+	width: 50px;
+	margin: 10px 0;
+}
+.blue-bg .title > h1:after {
+	border: 2px solid #fff;
+}
+.white-bg .title > h1:after {
+	border: 2px solid #3295be;
+}
+.blue-bg > .section-content {
+	background-color: #3295be;
+	background: rgba(34,125,170,1);
+	background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
+	background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#227daa', endColorstr='#51accd', GradientType=0 );
+}
+.white-bg > .section-content {
+	background-color: white;
+}
+.ui-content{
+	padding:0;
+}
+/*ABOUT*/
+/*Ninja Text*/
+/*SOURCE: http://stackoverflow.com/questions/21993661/css-auto-hide-elements-after-5-seconds*/
+.small {
+	font-size: 14px;
+	color: #aac7d9;
+	margin-bottom: 10px;
+	text-align:center;
+}
+.small .hideMe{
+	margin-bottom: 0px;
+}
+.box .small{
+	text-align:left;
+}
+.hideMe {
+	-moz-animation: cssAnimation 0s ease-in 4s forwards;
+	/* Firefox */
+	-webkit-animation: cssAnimation 0s ease-in 4s forwards;
+	/* Safari and Chrome */
+	-o-animation: cssAnimation 0s ease-in 4s forwards;
+	/* Opera */
+	animation: cssAnimation 0s ease-in 4s forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	text-align:center;
+}
+@keyframes cssAnimation {
+	to {
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
+}
+@-webkit-keyframes cssAnimation {
+	to {
+		width:0;
+		height:0;
+		visibility:hidden;
+	}
+}
+#about .main-section p{
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+.about_me p{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+/*Rounded Avatar*/
+.avatar{
+	display: block;
+	margin: 4% auto 2% auto;
+	-webkit-border-radius: 50%;/* for Safari and Chrome */
+	-moz-border-radius: 50%;/* for Firefox 3.5+ */
+	border-radius: 50%; /*IE and other browsers*/
+	-webkit-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
+	box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
+}
+.reference{
+	text-align: center;
+	font-size: 0.7em;
+}
+.reference a.ui-link {
+	text-decoration:none;
+	color: #fff;
+}
+.reference a:visited.ui-link{
+	color: #fff;
+}
+/*EDUCATION*/
+/*Hacky way to remove the ui-shadow*/
+.edu{
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+/*EXPERIENCE*/
+.box {
+	border: 1px solid #89bbd3;
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+	margin-bottom: 20px;
+	transition: opacity 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	/*Remove inherited values*/
+	text-shadow: 0 0px 0 #f3f3f3;
+}
+.content {
+	float: left;
+	width: 80%;
+}
+
+/*Change for hover state (BLUE)*/
+.blue-bg .box:hover {
+	border: 1px solid #fff;
+	color: white;
+	cursor:pointer;
+	background-color:white;
+}
+.blue-bg .box:hover h2{
+	color: #3295be;
+}
+.blue-bg .box:hover p{
+	color: #a3d0e3;
+}
+.blue-bg .ui-link:hover{
+	text-decoration:none;
+}
+.blue-bg .ui-link{
+	text-decoration:none;
+}
+/*End of hover change state for blue*/
+
+.box h2, .box img {
+	display: inline;
+}
+.blue-bg .box h2 {
+	color: white;
+	text-transform: none;
+}
+.box h2 {
+	margin: 0;
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+.box p {
+	color: #95c5db;
+}
+.blue-bg .box p {
+	color: #deeef5;
+}
+.content p {
+	margin: 0;
+	font-size: 18px;
+	color: white;
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+/*SKILLS*/
+.skillset_para{
+	margin-bottom:5%;
+}
+.section-content .content > div {
+	padding-left: 20px;
+}
+/*PROJECTS*/
+#projects .box h2{
+	color: #52acd1;
+}
+#skyverge .box h2 {
+    color: #52acd1;
+}
+#projects .box:hover h2{
+	color: #fff;
+}
+.white-bg .box p {
+	color: #a3d0e3;
+}
+#skyverge .white-bg .box {
+    color: #a3d0e3;
+}
+
+/*Change for hover state (WHITE)*/
+.white-bg .box:hover {
+	border: 1px solid #3295be;
+	color: white;
+	cursor:pointer;
+	background-color: #3295be;
+}
+.white-bg .box:hover h2{
+	color: #fff;
+}
+.white-bg .box:hover p{
+	color: #fff;
+}
+#skyverge .white-bg .box:hover {
+	color: #fff;
+}
+.white-bg .ui-link:hover{
+	text-decoration:none;
+}
+.white-bg .ui-link{
+	text-decoration:none;
+}
+.white-bg .box:hover .small{
+	color:#fff;
+}
+/*End of hover change state for white*/
+
+
+/*SOCIAL*/
+
+/******************/
+/*HI-DEF DESKTOPS*/
+/****************/
+/*XXLarge screens*/
+@media screen and (min-width: 140em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 10%;
+	}
+	.content {
+		float: right;
+		width: 90%;
+	}
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_650.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 60%;
+		width: 26%;
+		top: 13%;
+		left: 42%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		margin-bottom:5%;
+		width: 610px;
+		z-index: 6;
+		left: 35%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+	}
+
+	#twitter-widget-0 {
+		height:350px !important;
+		width: 800px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 20%;
+		width:30%;
+		top: 50%;
+		left: 70%;
+		position: absolute;
+	}
+	#githubbackdrop img{
+		width:50%;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 10%;
+		left: 80%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:90%;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 55%;
+		left: 10%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop img{
+		margin-top:10%;
+		width:60%;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+}/* min-width 2240px, xxlarge screens - Full HD+ */
+
+
+
+
+
+
+/******************/
+/*HI-DEF DESKTOPS*/
+/****************/
+/*XXLarge screens*/
+@media screen and (min-width: 120.063em) and (max-width: 140em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 100%;
+		width: 37%;
+		top: 25%;
+		left: 15%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 550px;
+		z-index: 6;
+		top: 0;
+		left: 20%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+	}
+
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 510px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 20%;
+		width:30%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+} /* min-width 1921px and max-width 2240px, xxlarge screens - FHD (Full HD) */
+
+/***********/
+/*DESKTOPS*/
+/*********/
+/*XLarge screens (1600px-1920px)*/
+@media screen and (min-width: 100em) and (max-width: 120em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 55%;
+		width: 37%;
+		top: 28%;/*Do not change*/
+		left: 23%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 550px;
+		z-index: 6;
+		top: 0;
+		left: 20%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:6%;
+	}
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 510px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		width:30%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:80%;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+
+
+} /* min-width 1600px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/***********/
+/*DESKTOPS*/
+/*********/
+/*XLarge screens (1441px-1600px)*/
+@media screen and (min-width: 90.063em) and (max-width: 100em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 55%;
+		width: 37%;
+		top: 28%;/*Do not change*/
+		left: 24%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 20%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:5%;
+	}
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 520px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 20%;
+		width:30%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+}/* min-width 1441px and max-width 1600px, use when QAing xlarge screen-only issues */
+
+
+
+/**********/
+/*LAPTOPS*/
+/********/
+/*Large screens*/
+@media screen and (min-width: 64.063em) and (max-width: 90em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 55%;
+		width: 41%;
+		top: 28%;/*Do not change*/
+		left: 25%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 20%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:8%;
+	}
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 520px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		width:30%;
+		top: 65%;
+		left: 70%;
+		position: absolute;
+	}
+	#githubbackdrop img{
+		width:50%;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop img{
+		margin-top:10%;
+		width:40%;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/**********/
+/*TABLETS*/
+/********/
+/*Medium screens*/
+@media screen and (min-width: 40.063em) and (max-width: 64em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:2%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 55%;
+		width: 55%;
+		top: 27%;/*Do not change*/
+		left: 27%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 20%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:10%;
+	}
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 520px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 4;
+		width:50%;
+		top: 75%;
+		left: 80%;
+		position: absolute;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 10%;
+		left: 85%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:80%;
+	}
+	
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/**********/
+/*MOBILE**/
+/********/
+/*Larger Mobile Screens*/
+@media screen and (min-width: 30em) and (max-width: 40.063em) { 
+	/*EDUCATION*/
+	img#ucd_logo{
+		margin-left:4%;
+	}
+	.main-section h1:after {
+		margin: 10px 0 -10px 42%;
+	}
+	.main-section > .section-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px;
+		text-align: left;
+	}
+	.section-content {
+		padding: 10px;
+		display: block;
+		overflow: auto;
+	}
+	.title {
+		float: left;
+		width: 100%;
+		margin-top: 10%; 
+	}
+	.content{
+		width:100%;
+	}
+	.section-content .content > div {
+		padding-left: 0px;
+	}
+
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_390.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 60%;
+		width: 100%;
+		top: 37%;/*Do not change*/
+		left: 9%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 10%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:8%;
+		margin-top:20%;
+	}
+	#twitter-widget-0 {
+		height:230px !important;
+		width: 360px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 7;
+		width:50%;
+		top: 70%;
+		left: 80%;
+		position: absolute;
+	}
+	#githubbackdrop img{
+		width:50%;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 10%;
+		left: 50%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:80%;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 8;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop img{
+		margin-top:10%;
+		width:30%;
+	}
+	
+	#border_table{
+		margin-top:10%;
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+	.social-push{
+		margin-bottom:10%;
+	}
+}
+/*LANDSCAPE (Large Smart Phones)*/
+@media screen and (min-width: 30em) and (max-width: 40.063em) and (orientation: landscape) { 
+	/*EDUCATION*/
+	img#ucd_logo{
+		margin-left:4%;
+	}
+	.main-section h1:after {
+		margin: 10px 0 -10px 42%;
+	}
+	.main-section > .section-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px;
+		text-align: left;
+	}
+	.section-content {
+		padding: 10px;
+		display: block;
+		overflow: auto;
+	}
+	.title {
+		float: left;
+		width: 100%;
+		margin-top: 10%; 
+	}
+	.content{
+		width:100%;
+	}
+	.section-content .content > div {
+		padding-left: 0px;
+	}
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_390.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 52%;
+		width: 100%;
+		top: 40%;/*Do not change*/
+		left: 2%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 2%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:5%;
+		margin-top:20%;
+	}
+	#twitter-widget-0 {
+		height:230px !important;
+		width: 370px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 7;
+		width:50%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
+	}
+	#githubbackdrop img{
+		width:50%;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 10%;
+		left: 55%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:50%;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 8;
+		top: 72%;
+		left: 5%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop img{
+		margin-top:10%;
+		width:30%;
+	}
+	
+	#border_table{
+		margin-top:10%;
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+	.social-push{
+		margin-bottom:10%;
+	}
+}/*Ex.800x480 - OnePlus 3*/
+/**********/
+/*MOBILE**/
+/********/
+/*Smaller Mobile Screens*/
+@media screen and (max-width: 30em) { 
+	/*EDUCATION*/
+	img#ucd_logo{
+		margin-left:4%;
+	}
+	.main-section h1:after {
+		margin: 10px 0 -10px 42%;
+	}
+	.main-section > .section-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px;
+		text-align: left;
+	}
+	.section-content {
+		padding: 10px;
+		display: block;
+		overflow: auto;
+	}
+	.title {
+		float: left;
+		width: 100%;
+		margin-top: 10%; 
+	}
+	.content{
+		width:100%;
+	}
+	.section-content .content > div {
+		padding-left: 0px;
+	}
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_390.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 50%;
+		width: 100%;
+		top: 35%;/*Do not change*/
+		left: 0;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 2%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:5%;
+		margin-top:20%;
+	}
+	#twitter-widget-0 {
+		height:230px !important;
+		width: 360px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 7;
+		width:50%;
+		top: 75%;
+		left: 80%;
+		position: absolute;
+	}
+	#githubbackdrop img{
+		width:50%;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 10%;
+		left: 50%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:80%;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 8;
+		top: 72%;
+		left: 5%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop img{
+		margin-top:10%;
+		width:30%;
+	}
+	
+	#border_table{
+		margin-top:10%;
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+	.social-push{
+		margin-bottom:10%;
+	}
+}

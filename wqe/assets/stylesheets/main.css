@@ -1,0 +1,192 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css';
+@import 'fonts.css';
+
+body {
+  color: rgba(0, 0, 0 , 0.5);
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  height: 100vh;
+  line-height: 1.8em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  -webkit-transition: color 0.25s linear;
+}
+
+a:hover {
+  color: #00b6c6;
+}
+
+p {
+  padding: 1em 0;
+}
+
+nav {
+  font-size: 90%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.browserupgrade {
+  background: #ccc;
+  color: #000;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
+}
+
+.photo {
+  background: transparent url(../images/kira.jpg) no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: 50% 15%;
+  height: 50vh;
+  padding: 2em 0;
+}
+
+.content {
+  border-bottom: 15px solid #00b6c6;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.content h1 {
+  color: #00b6c6;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin-top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Networks */
+.networks {
+  padding-top: 2em;
+}
+
+.networks li {
+  display: inline-block;
+}
+
+.networks li:not(:last-child) {
+  padding-right: 1.5em;
+}
+
+.networks li a {
+  display: block;
+  font-size: 1.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.icon {
+  transition: color 0.25s linear;
+  -webkit-transition: color 0.25s linear;
+}
+
+.linkedin:hover {
+  color: #117eb9;
+}
+
+.github:hover {
+  color: #ccc;
+}
+
+.stackoverflow:hover {
+  color: #f48024;
+}
+
+.medium:hover {
+  color: #00ab6b;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.email:hover {
+  color: #cf4a39;
+}
+
+/* Media Queries */
+@media (min-width: 450px) {
+  .photo {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .photo {
+    background-size: 65%;
+    height: 40vh;
+    padding: 3em;
+  }
+
+  .content {
+    padding: 3em 6em;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .photo {
+    background-size: cover;
+    height: 100vh;
+    padding: 0;
+    width: 50vw;
+  }
+
+  .content {
+    background-color: #fff;
+    padding: 2em;
+    text-align: left;
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1000px) {
+  .content {
+    padding: 4em 6em;
+  }
+
+  /* Flexbox usage */
+  .flexbox .content {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .flexbox .content {
+       -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -ms-flex-direction: column;
+           flex-direction: column;
+         -webkit-box-pack: center;
+            -ms-flex-pack: center;
+          justify-content: center;
+  }
+}
+
+/* No flexbox */
+.no-flexbox body {
+  background: transparent url(../images/kira.jpg) left top no-repeat;
+}
+
+.no-flexbox .content {
+  margin: 2em auto 0 auto;
+}
